@@ -82,7 +82,7 @@ function title() {
   fill(90, 0, 214); //bright purple text to contrast with red and yellow background
   textAlign(CENTER);
   textSize(60);
-  text("Summer Ice Breaker", width*0.5, height*0.5);
+  text("Thanksgiving Ice Breaker", width*0.5, height*0.5);
   textSize(24);
   text("Click button to begin new round", width*0.5, height*0.75);
 }
