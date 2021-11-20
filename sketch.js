@@ -52,13 +52,13 @@ function draw() {
    }
 }
 
-function drawPixels() { //draw a vertical red-orange background
+function drawPixels() { //draw a vertical red, orange, and yellow background—fall color scheme
   loadPixels();
   for (let i = 0; i < width; i++) {
     for (let j = 0; j < height; j++) {
       let index = (i + j * width) * 4;
-      pixels[index + 0] = 255; //add dark red pixels to the top
-      pixels[index + 1] = j/3;  //add green pixels to red ones to create orange
+      pixels[index + 0] = 240; //add dark red pixels to the top
+      pixels[index + 1] = j/2;  //add green pixels to red ones to create orange
       pixels[index + 2] = 0; //no blue used here
       pixels[index + 3] = 255;
     }
@@ -74,7 +74,7 @@ function title() {
   }
 
   drawPixels();
-  fill(255); //white text to contrast with red-orange background
+  fill(50, 25, 0); //dark brown text to contrast with bright red-orange background
   textAlign(CENTER);
   textSize(60);
   text("Thanksgiving Ice Breaker", width*0.5, height*0.5);
