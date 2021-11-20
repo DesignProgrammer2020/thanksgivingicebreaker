@@ -10,5 +10,6 @@ canvas {
   height: 40px;
   width: 130px;
   padding: 10px;
-  background-color: #ff9564;
+  color: white;
+  background-color: #754c0f; //autumn brown
 }
