@@ -57,10 +57,10 @@ function drawPixels() { //draw a vertical sunset-like background
   for (let i = 0; i < width; i++) {
     for (let j = 0; j < height; j++) {
       let index = (i + j * width) * 4;
-      pixels[index + 0] = 255; //add bright red pixels to the top
-      pixels[index + 1] = j*0.75;  //add green pixels to red ones to create yellow
+      pixels[index + 0] = 200; //add dark red pixels to the top
+      pixels[index + 1] = j/2;  //add green pixels to red ones to create orange/brown
       pixels[index + 2] = 0; //no blue used here
-      pixels[index + 3] = 180; //added transparency to make colors lighter
+      pixels[index + 3] = 255;
     }
   }
   updatePixels();
@@ -74,7 +74,7 @@ function title() {
   }
 
   drawPixels();
-  fill(90, 0, 214); //bright purple text to contrast with red and yellow background
+  fill(50, 25, 0); //dark brown text to contrast with red and yellow background
   textAlign(CENTER);
   textSize(60);
   text("Thanksgiving Ice Breaker", width*0.5, height*0.5);
@@ -95,7 +95,7 @@ function buttonPressed(){
   if (index >= 0){
     questions.splice(index, 1);
   }
-  if (numQuestions >= 8){
+  if (numQuestions >= 6){
     initTitle();
     console.log(`question_library=${question_library}`);
     return;
