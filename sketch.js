@@ -2,28 +2,23 @@ let animating = false;
 
 //display random questions from this array
 let question_library = [
-"What are one or two things you are thankful for this year?"
-"What is your favorite thing about Thanksgiving?"
-"What activities do you do during Thanksgiving?"
-"How to say “thank you” in your language?"
-
-"How often do you travel during Thanksgiving break?"
-"What plans do you have for this break/next break?"
-
-"Which places have you explored this year?"
-
-"What are your favorite Thanksgiving foods?"
-"What are your favorite Thanksgiving beverages?"
-"What are your favorite Thanksgiving desserts?"
-
-"How is the weather in your area?"
-"What do you like about the autumn season?"
-
-"Which movies have you watched recently?"
-"What kinds of music have you been listening to recently?"
-"What are your favorite music genres?"
-"What musical instrument do you play?"
-"What sports do you play/watch?"
+"What are one or two things you are thankful for this year?",
+"What is your favorite thing about Thanksgiving?",
+"What activities do you do during Thanksgiving?",
+"How to say “thank you” in your language?",
+"How often do you travel during Thanksgiving break?",
+"What plans do you have for this break/next break?",
+"Which places have you explored this year?",
+"What are your favorite Thanksgiving foods?",
+"What are your favorite Thanksgiving beverages?",
+"What are your favorite Thanksgiving desserts?",
+"How is the weather in your area?",
+"What do you like about the autumn season?",
+"Which movies have you watched recently?",
+"What kinds of music have you been listening to recently?",
+"What are your favorite music genres?",
+"What musical instrument do you play?",
+"What sports do you play/watch?",
 "What are your favorite sports teams?"
 ];
 
