@@ -4,7 +4,7 @@ let animating = false;
 let question_library = [
 "What are one or two things you are thankful for this year?",
 "What is your favorite thing about Thanksgiving?",
-"What activities do you do during Thanksgiving?",
+"What activities do you do typically do during Thanksgiving?",
 "How to say 'thank you' in languages you know?",
 "How to say 'peace' in languages you know?",
 "How to say 'Thanksgiving' in languages you know?",
@@ -54,13 +54,13 @@ function draw() {
    }
 }
 
-function drawPixels() { //draw a vertical red, orange, and yellow background—fall color scheme
+function drawPixels() { //draw a vertical deep red-orange background—fall color scheme
   loadPixels();
   for (let i = 0; i < width; i++) {
     for (let j = 0; j < height; j++) {
       let index = (i + j * width) * 4;
-      pixels[index + 0] = 240; //add dark red pixels to the top
-      pixels[index + 1] = j/2;  //add green pixels to red ones to create orange
+      pixels[index + 0] = 200; //add dark red pixels to the top
+      pixels[index + 1] = j/4;  //add green pixels to red ones to create orange
       pixels[index + 2] = 0; //no blue used here
       pixels[index + 3] = 255;
     }
@@ -76,7 +76,7 @@ function title() {
   }
 
   drawPixels();
-  fill(50, 25, 0); //dark brown text to contrast with bright red-orange background
+  fill(255); //white text to contrast with deep red-orange background
   textAlign(CENTER);
   textSize(60);
   text("Thanksgiving Ice Breaker", width*0.5, height*0.5);
