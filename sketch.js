@@ -10,10 +10,12 @@ let question_library = [
 "How often do you travel during Thanksgiving break?",
 "What plans do you have for this break/next break?",
 "Which places have you explored this year?",
+"What was the best vacation you’ve had?",
 "What are your favorite Thanksgiving foods?",
 "What are your favorite Thanksgiving beverages?",
 "What are your favorite Thanksgiving desserts?",
 "How is the weather in your area?",
+"What is your favorite season?",
 "What do you like about the autumn season?",
 "How to say 'autumn' in languages you know?",
 "Which movies have you watched recently?",
@@ -21,7 +23,7 @@ let question_library = [
 "What are your favorite music genres?",
 "What musical instrument do you play?",
 "What sports do you play/watch?",
-"What are your favorite sports teams?"
+"What is your favorite sports team/athlete?"
 ];
 
 let index = -1;
