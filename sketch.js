@@ -82,9 +82,16 @@ function title() {
   text("Thanksgiving Ice Breaker", width*0.5, height*0.4);
   textSize(24);
   text("Click button to begin new round", width*0.5, height*0.6);
+
+  push();
+  frameRate(4);
+  //"HAPPY THANKSGIVING" text
+  textFont('Courier New');
+  textStyle(BOLD);
   textSize(48);
   fill(random(100, 255), random(100, 255), random(100, 255)); //make text change colors; keep in pastel range
   text("HAPPY THANKSGIVING!!!!!", width*0.5, height*0.8);
+  pop();
 }
 
 function showQuestion(){
