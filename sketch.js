@@ -32,7 +32,7 @@ let numQuestions = 0;
 let nextButton; //button to display next question
 
 function setup() {
-  cnv=createCanvas(windowWidth, 450);
+  cnv=createCanvas(windowWidth, 500);
   cnv.parent("#canvasDiv");
   pixelDensity(1);
   nextButton = select("#nextQuestion");
@@ -79,9 +79,12 @@ function title() {
   fill(255); //white text to contrast with deep red-orange background
   textAlign(CENTER);
   textSize(60);
-  text("Thanksgiving Ice Breaker", width*0.5, height*0.5);
+  text("Thanksgiving Ice Breaker", width*0.5, height*0.4);
   textSize(24);
-  text("Click button to begin new round", width*0.5, height*0.75);
+  text("Click button to begin new round", width*0.5, height*0.6);
+  textSize(48);
+  fill(random(100, 255), random(100, 255), random(100, 255)); //make text change colors; keep in pastel range
+  text("HAPPY THANKSGIVING!!!!!", width*0.5, height*0.8);
 }
 
 function showQuestion(){
