@@ -7,7 +7,6 @@ let question_library = [
 "What activities do you do typically do during Thanksgiving?",
 "How to say 'thank you' in languages you know?",
 "How to say 'peace' in languages you know?",
-"How to say 'Thanksgiving' in languages you know?",
 "How often do you travel during Thanksgiving break?",
 "What plans do you have for this break/next break?",
 "Which places have you explored this year?",
@@ -16,6 +15,7 @@ let question_library = [
 "What are your favorite Thanksgiving desserts?",
 "How is the weather in your area?",
 "What do you like about the autumn season?",
+"How to say 'autumn' in languages you know?",
 "Which movies have you watched recently?",
 "What kinds of music have you been listening to recently?",
 "What are your favorite music genres?",
@@ -42,9 +42,6 @@ function setup() {
   pixelDensity(1);
   nextButton = select("#nextQuestion");
   nextButton.mousePressed(buttonPressed);
-
-  // //upload newYork font
-  // newYork = loadFont('font/NewYork.ttf');
 }
 
 function draw() {
