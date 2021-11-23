@@ -31,12 +31,20 @@ let numQuestions = 0;
 
 let nextButton; //button to display next question
 
+function preload() {
+  //upload newYork font
+  newYork = loadFont('font/NewYork.ttf');
+}
+
 function setup() {
   cnv=createCanvas(windowWidth, 500);
   cnv.parent("#canvasDiv");
   pixelDensity(1);
   nextButton = select("#nextQuestion");
   nextButton.mousePressed(buttonPressed);
+
+  // //upload newYork font
+  // newYork = loadFont('font/NewYork.ttf');
 }
 
 function draw() {
@@ -76,6 +84,8 @@ function title() {
   }
 
   drawPixels();
+
+  textFont('NewYork');
   fill(255); //white text to contrast with deep red-orange background
   textAlign(CENTER);
   textSize(60);
@@ -86,7 +96,6 @@ function title() {
   push();
   frameRate(4);
   //"HAPPY THANKSGIVING" text
-  textFont('Courier New');
   textStyle(BOLD);
   textSize(48);
   fill(random(100, 255), random(100, 255), random(100, 255)); //make text change colors; keep in pastel range

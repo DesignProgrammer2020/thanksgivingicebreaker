@@ -11,5 +11,6 @@ canvas {
   width: 130px;
   padding: 10px;
   color: white;
+  font-family: 'NewYork';
   background-color: #754c0f; //autumn brown
 }
