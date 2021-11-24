@@ -113,7 +113,8 @@ function buttonPressed(){
   if (index >= 0){
     questions.splice(index, 1);
   }
-  if (numQuestions >= 6){
+
+  if (numQuestions >= 5){
     initTitle();
     console.log(`question_library=${question_library}`);
     return;
