@@ -5,21 +5,25 @@ let question_library = [
 "What are one or two things you are thankful for this year?",
 "What is your favorite thing about Thanksgiving?",
 "What great experiences have you had this year?",
+"What talents are you proud of?",
 "How to say 'thank you' in languages you know?",
 "How to say 'peace' in languages you know?",
 "How often do you travel during Thanksgiving break?",
 "What plans do you have for this break/next break?",
 "Which places have you explored this year?",
+"What was the best vacation you've had?",
 "What are your favorite Thanksgiving dishes (foods)?",
 "What are your favorite Thanksgiving beverages?",
 "What are your favorite Thanksgiving desserts?",
+"What was the best food you've ever tried?",
 "How is the weather in your area?",
-"What is your favorite season?",
+"What is your favorite season of the year?",
 "What do you like about the autumn season?",
 "How to say 'autumn' in languages you know?",
 "Which movies have you watched recently?",
 "What kinds of music have you been listening to recently?",
 "What are your favorite music genres?",
+"What musical instruments do you play?",
 "What sports do you play/watch?",
 "What is your favorite sports team/athlete?"
 ];
@@ -114,7 +118,7 @@ function buttonPressed(){
     questions.splice(index, 1);
   }
 
-  if (numQuestions >= 5){
+  if (numQuestions >= 8){
     initTitle();
     console.log(`question_library=${question_library}`);
     return;
