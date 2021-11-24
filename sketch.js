@@ -5,7 +5,7 @@ let question_library = [
 "What are one or two things you are thankful for this year?",
 "What is your favorite thing about Thanksgiving?",
 "What great experiences have you had this year?",
-"What talents are you proud of?",
+"What special talents do you have?",
 "How to say 'thank you' in languages you know?",
 "How to say 'peace' in languages you know?",
 "How often do you travel during Thanksgiving break?",
